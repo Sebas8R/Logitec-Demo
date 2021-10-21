@@ -6,52 +6,64 @@ header{
     width: 100%;
     height: 210px;
     background-color: black;
+    max-width:100%;
 }
 header img{
     width: 300px;
     padding: 40px;
-
+    float:center;
 }
 .menu{
     display: flex;
+    width:100%;
     background-color: rgb(0, 0, 0);
     height: 20px;
     align-items: center;
 }
-.menu a{
-    display: flex;
-    align-items: center;
-    width: 230px;
-    height: 50px;
-    background-color: rgb(0, 102, 255);
-    border-radius: 20px;
-    padding: 3px;
-    margin: 10px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-family: fantasy;
-    text-decoration: none;
+.menu nav {
+    width:100%;
+	/* Flexbox */
+
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
 }
-.menu a:hover{
-    background-color: rgb(4, 50, 94);
-    color: white;
-    text-decoration: none;
+
+.menu nav a {
+	background:rgb(5, 124, 221);;
+	color:#fff;
+	text-align: center;
+	text-decoration: none;
+	padding:7px;
+	margin: 5px;
+    font-family: 'Cabin', sans-serif;
+    border: 2px solid white;
+	/* Flexbox */
+	flex-grow:1;
+	border-radius: 20px
+}
+.menu nav a:hover {
+	background:#ffffff;
+	color:black
 }
 img{
     width: 100%;
 }
 .inf{
     width: 100%;
-    height: 480px;
+    height: auto;
     background-color: rgb(5, 124, 221);
 }
 .inf img{
-    width: 580px;
+    width: 585px;
+    height: ;
+    max-width:100%;
 }
 .inf div{
     float: right;
     width: 650px;
+    max-width:100%;
+    background-color:rgb(5, 124, 221);
 }
 .inf div h1{
     text-align: center;
@@ -65,11 +77,6 @@ img{
     padding: 30px;
     color: white;
     font-family: 'Cabin', sans-serif;
-}
-.galeria{
-    height: 500px;
-    padding: 10px;
-    margin: 20px;
 }
 .cards {
     display: flex;
@@ -107,15 +114,16 @@ img{
 }
 .maps{
     width: 100%;
-    height: 540px;
+    height: auto;
     background-color:rgb(5, 124, 221);
     margin: 1px;
 }
 .maps iframe{
     margin: 13px;
     width: 1220px;
-    height: 400px;
+    height: 300px;
     float: right;
+    max-width:100%
 }
 .maps h1{
     color: white;
@@ -153,3 +161,4 @@ footer p{
     color:  rgba(70, 69, 69, 0.856);
     margin: 20px;
 }
+
